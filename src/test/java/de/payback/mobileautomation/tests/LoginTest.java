@@ -1,5 +1,6 @@
 package de.payback.mobileautomation.tests;
 
+import com.tngtech.jgiven.annotation.ScenarioState;
 import com.tngtech.jgiven.junit.ScenarioTest;
 import de.payback.mobileautomation.StepDef.GivenIAmAtTheLoginPage;
 import de.payback.mobileautomation.StepDef.ThenSomeOutcome;
@@ -10,7 +11,10 @@ import org.openqa.selenium.WebDriver;
 
 
 public class LoginTest extends ScenarioTest<GivenIAmAtTheLoginPage, WhenSomeAction, ThenSomeOutcome> {
+
+    @ScenarioState
     WebDriver driver;
+
 
     @Test()
      public void login_Into_Payback_$() throws InterruptedException {
@@ -34,8 +38,5 @@ public class LoginTest extends ScenarioTest<GivenIAmAtTheLoginPage, WhenSomeActi
         driver.quit();
     }
 
-//    @Override
-//    public Scenario<GivenIAmAtTheLoginPage, WhenSomeAction, ThenSomeOutcome> getScenario() {
-//        return null;
-//    }
+
 }

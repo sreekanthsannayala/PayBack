@@ -11,13 +11,8 @@ public class WhenSomeAction extends Stage<WhenSomeAction> {
     WebDriver driver;
     @ScenarioState
     LoginPage loginPage;
-    //LoginPage loginPage = new LoginPage();
 
-    public WhenSomeAction I_login_as_john_with_password_demo() {
 
-        return self();
-    }
-//
     public WhenSomeAction i_click_on_the_Coupons_$() {
         loginPage.clickOnCoupons();
         loginPage.clickOnFilterSec();
