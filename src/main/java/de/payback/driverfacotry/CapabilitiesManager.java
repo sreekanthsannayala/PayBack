@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class CapabilitiesManager {
-   // TestUtils utils = new TestUtils();
+
 
     public DesiredCapabilities getCaps() throws IOException {
 

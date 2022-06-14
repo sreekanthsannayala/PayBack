@@ -15,7 +15,6 @@ public class LoginTest extends ScenarioTest<GivenIAmAtTheLoginPage, WhenSomeActi
     @ScenarioState
     WebDriver driver;
 
-
     @Test()
      public void login_Into_Payback_$() throws InterruptedException {
 

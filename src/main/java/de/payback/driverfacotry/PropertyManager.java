@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class PropertyManager {
     private static Properties props = new Properties();
-   // TestUtils utils = new TestUtils();
+
 
     public Properties getProps() throws IOException {
         InputStream is = null;
